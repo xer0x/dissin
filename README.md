@@ -42,3 +42,22 @@ console.log('%s', dsn);
 // mysql://localhost:1234/
 ```
 
+#### Run tests
+```
+npm test
+
+> dissin@1.0.0 test /Users/xer0x/dissin
+> node node_modules/.bin/faucet test/*.js
+
+✓ dsn has validate helper
+✓ parse a dsn
+✓ toString a dsn
+✓ toString: password is optional
+✓ toString: port is optional
+✓ validators: ignore invalid updates
+✓ parse: quietly enter error when a validation fails
+✓ caching: dirty flag toggles on change
+# tests 17
+# pass  17
+✓ ok
+```
