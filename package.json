@@ -1,0 +1,27 @@
+{
+  "name": "dissin",
+  "version": "1.0.0",
+  "description": "r u dissin me?",
+  "main": "dissin.js",
+  "scripts": {
+    "test": "node node_modules/.bin/faucet test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xer0x/dissin.git"
+  },
+  "keywords": [
+    "dsn",
+    "helper"
+  ],
+  "author": "xer0x",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xer0x/dissin/issues"
+  },
+  "homepage": "https://github.com/xer0x/dissin#readme",
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^4.2.2"
+  }
+}
