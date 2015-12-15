@@ -3,7 +3,7 @@ r u dissin me?
 
 An over engineered module for parsing and assembling a DSN.
 
-For me, this is sample code, and a chance to play with Javascript's Object.create().
+This was a fun chance to play around with Javascript's Object.create(). I've tried to keep the interface fairly sane. Run the constructor without `new` to create a DSN object.
 
 ## Usage:
 
@@ -27,6 +27,7 @@ console.log(%s, dsn);
 ```
 
 #### add custom validators
+```
 var dsn = dissin('mysql://localhost');
 dsn.addValidation('port', function(x) { return (x == 1234); } );
 dsn.port = 80;
@@ -39,6 +40,5 @@ console.log(dsn.errors)
 dsn.port = 1234;
 console.log('%s', dsn);
 // mysql://localhost:1234/
-
 ```
 
